@@ -8,7 +8,7 @@ const Header = () => {
       className="min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./src/assets/header_img.jpg')",
+          "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./src/assets/header_img.jpg')",
       }}
       id="Header"
     >
