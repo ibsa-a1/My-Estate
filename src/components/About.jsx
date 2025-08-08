@@ -7,10 +7,15 @@ const About = () => {
       w-full overflow-hidden"
       id="About"
     >
-      <h1>
-        About <span>Our Brand</span>
+      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-2">
+        About{" "}
+        <span className="underline underline-offset-4 decoration-1 under font-light">
+          Our Brand
+        </span>
       </h1>
-      <p>Passionate About Properties, Dedicated to Your Vision</p>
+      <p className="text-gray-500 max-w-80 text-center mb-8">
+        Passionate About Properties, Dedicated to Your Vision
+      </p>
     </div>
   );
 };
