@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "./../assets/assets";
+import { assets, projectsData } from "./../assets/assets";
 
 const Projects = () => {
   return (
@@ -29,6 +29,30 @@ const Projects = () => {
         >
           <img src={assets.right_arrow} alt="Next" />
         </button>
+      </div>
+
+      <div className="overflow-hidden">
+        <div className="flex gap-8 transition-transform duration-500 ease-in-out">
+          {projectsData.map((project, index) => (
+            <div key={index} className="relative flex-shrink-0 w-full sm:w-1/4">
+              <img
+                src={project.image}
+                alt={project}
+                className="w-full h-auto mb-14"
+              />
+              <div className="absolute left-0 right-0 bottom-5 flex justify-center">
+                <div className="inline-block w-3/4 px-4 py-2 bg-white shadow-md">
+                  <h2 className="text-xl font-semibold text-gray-800">
+                    {project.title}
+                  </h2>
+                  <p className="text-sm text-gray-500">
+                    {project.price} <span>|</span> {project.location}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
