@@ -1,6 +1,34 @@
 import React from "react";
 
 const Context = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    const emailkey = import.meta.env.VITE_WEB3_KEY;
+
+    formData.append("access_key", emailkey);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("");
+      alert("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      alert(data.message);
+      setResult("");
+    }
+  };
+
   return (
     <div
       className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
@@ -16,7 +44,10 @@ const Context = () => {
         Ready to make a move? Let's Build your Future Together
       </p>
 
-      <form className="max-w-2xl mx-auto text-gray-600 pt-8">
+      <form
+        onSubmit={onSubmit}
+        className="max-w-2xl mx-auto text-gray-600 pt-8"
+      >
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 text-left">
             Your Name
@@ -49,7 +80,7 @@ const Context = () => {
           ></textarea>
         </div>
         <button className="bg-blue-500 text-white px-12 py-2 mb-10 rounded">
-          Send Message
+          {result ? result : "Send Message"}
         </button>
       </form>
     </div>
