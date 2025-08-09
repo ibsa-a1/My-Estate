@@ -1,4 +1,5 @@
 import React from "react";
+import { assets } from "./../assets/assets";
 
 const Projects = () => {
   return (
@@ -15,6 +16,20 @@ const Projects = () => {
       <p className="text-gray-500 max-w-80 text-center mb-8 mx-auto">
         Crafting Spaces, Building Legacies-Explore Our Portfolio
       </p>
+      <div className="flex justify-end items-center mb-8">
+        <button
+          className="p-3 bg-gray-200 rounded mr-2 w-10 cursor-pointer"
+          aria-label="Previous Project"
+        >
+          <img src={assets.left_arrow} alt="Previous" />
+        </button>
+        <button
+          className="p-3 bg-gray-200 rounded mr-2 w-10 cursor-pointer"
+          aria-label="Previous Project"
+        >
+          <img src={assets.right_arrow} alt="Next" />
+        </button>
+      </div>
     </div>
   );
 };
