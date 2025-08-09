@@ -10,6 +10,9 @@ import project_img_3 from "./project_img_3.jpg";
 import project_img_4 from "./project_img_4.jpg";
 import project_img_5 from "./project_img_5.jpg";
 import project_img_6 from "./project_img_6.jpg";
+import profile_img_1 from "./profile_img_1.jpg";
+import profile_img_2 from "./profile_img_2.jpg";
+import profile_img_3 from "./profile_img_3.jpg";
 
 export const assets = {
     logo,
@@ -24,6 +27,9 @@ export const assets = {
     project_img_4,
     project_img_5,
     project_img_6,
+    profile_img_1,
+    profile_img_2,
+    profile_img_3,
 };
 
 export const projectsData = [
@@ -64,3 +70,30 @@ export const projectsData = [
         image: project_img_6
     },
 ];
+
+export const testimonialsData = [
+    {
+        name: "Emily Johnson",
+        title: "Interior Designer",
+        image: profile_img_1,
+        alt: "Portrait of Emily Johnson",
+        rating: 5,
+        text: "My experience with MyEstate was exceptional. The team's professionalism and attention to detail made the process seamless. I couldn’t have asked for a smoother experience!"
+    },
+    {
+        name: "Michael Smith",
+        title: "Marketing Manager",
+        image: profile_img_2,
+        alt: "Portrait of Michael Smith",
+        rating: 4,
+        text: "Working with MyEstate was a game-changer for my client. Their expertise and dedication to their clients' needs were unparalleled. I highly recommend them!"
+    },
+    {
+        name: "Sophia Williams",
+        title: "Software Engineer",
+        image: profile_img_3,
+        alt: "Portrait of Sophia Brown",
+        rating: 5,
+        text: "MyEstate exceeded my expectations. Their personalized approach and attention to detail made the buying process stress-free. I found my dream apartment in less than a month!"
+    },
+]
