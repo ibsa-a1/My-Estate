@@ -36,7 +36,14 @@ const Footer = () => {
             </a>
           </ul>
         </div>
-        <div></div>
+        <div className="w-full md:w-1/3">
+          <h3 className="text-white text-lg font-bold mb-4">
+            Subscribe to Our Newsletter
+          </h3>
+          <p className="mb-4 text-gray-400 max-w-80">
+            The Latest news, articles and resources sent tomyour inbox weekly.
+          </p>
+        </div>
       </div>
       <div></div>
     </div>
