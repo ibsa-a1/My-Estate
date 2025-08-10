@@ -37,9 +37,11 @@ const Navbar = () => {
             Testimonials
           </a>
         </ul>
-        <button className="hidden md:block bg-white py-2 px-8 rounded-full">
-          Sign Up
-        </button>
+        <a href="#Footer">
+          <button className="hidden md:block bg-white py-2 px-8 rounded-full cursor-pointer">
+            Sign Up
+          </button>
+        </a>
         <img
           src={assets.menu_icon}
           alt=""
