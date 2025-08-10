@@ -19,7 +19,23 @@ const Footer = () => {
             tailored to your needs.
           </p>
         </div>
-        <div></div>
+        <div className="w-full md:w-1/5 mb-8 md:mb-0">
+          <h3 className="text-white text-lg font-bold mb-4">Company</h3>
+          <ul className="flex flex-col gap-2 text-gray-400">
+            <a href="#Header" className="hover:text-white">
+              Home
+            </a>
+            <a href="#About" className="hover:text-white">
+              About Us
+            </a>
+            <a href="#Contact" className="hover:text-white">
+              Contact Us
+            </a>
+            <a href="" className="hover:text-white">
+              Privacy & Policy
+            </a>
+          </ul>
+        </div>
         <div></div>
       </div>
       <div></div>
