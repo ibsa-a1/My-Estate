@@ -14,6 +14,7 @@ import profile_img_1 from "./profile_img_1.png";
 import profile_img_2 from "./profile_img_2.png";
 import profile_img_3 from "./profile_img_3.png";
 import star_icon from "./star_icon.svg";
+import header_img from "./header_img.jpg"
 
 export const assets = {
     logo,
@@ -32,6 +33,7 @@ export const assets = {
     profile_img_2,
     profile_img_3,
     star_icon,
+    header_img,
 };
 
 export const projectsData = [
