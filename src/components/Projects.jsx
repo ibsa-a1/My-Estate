@@ -46,7 +46,13 @@ const Projects = () => {
       <p className="text-gray-500 max-w-80 text-center mb-8 mx-auto">
         Crafting Spaces, Building Legacies-Explore Our Portfolio
       </p>
-      <div className="flex justify-end items-center mb-8">
+      <motion.div
+        initial={{ opacity: 0, x: 200 }}
+        transition={{ duration: 2 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="flex justify-end items-center mb-8"
+      >
         <button
           onClick={prevProject}
           className="p-3 bg-gray-200 rounded mr-2 w-10 cursor-pointer"
@@ -61,11 +67,11 @@ const Projects = () => {
         >
           <img src={assets.right_arrow} alt="Next" />
         </button>
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, x: 200 }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 2 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         className="overflow-hidden"
