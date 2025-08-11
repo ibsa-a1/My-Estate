@@ -43,13 +43,13 @@ const Footer = () => {
           <p className="mb-4 text-gray-400 max-w-80">
             The Latest news, articles and resources sent tomyour inbox weekly.
           </p>
-          <div className="flex gap-2 ">
+          <div className="flex gap-2 md:gap-0 lg:gap-2">
             <input
               type="email"
               placeholder="Enter Your Email"
-              className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline-none w-full md:w-auto"
+              className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline-none max-w-80 md:max-w-45 lg:max-w-80"
             />
-            <button className="px-4 py-2 ml-2 rounded bg-blue-500 text-white">
+            <button className="px-4 py-2 md:px-2 lg:px-4 lg:py-2 md:py-0 ml-2 rounded bg-blue-500 text-white">
               Subscribe
             </button>
           </div>
