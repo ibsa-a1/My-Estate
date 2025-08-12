@@ -56,7 +56,16 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-700 py-4 mt-10 text-center text-gray-500">
-        Copyright &copy; 2025 My Estate. All rights reserved
+        Copyright &copy; 2025{" "}
+        <a
+          href="https://www.linkedin.com/in/ibsa-abera-37b6a2333/"
+          className="text-blue-500 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ibsa A.
+        </a>{" "}
+        All rights reserved
       </div>
     </div>
   );
