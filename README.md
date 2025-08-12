@@ -34,6 +34,41 @@ A modern **real estate landing page** built with **Vite + React.js** and **Tailw
 
 ---
 
+## 📁 File & Folder Structure
+
+Below is the project structure used for My Estate.
+```
+My-Estate/
+├─ public/
+│  └─ vite.svg
+├─ src/
+│  ├─ assets/
+│  │  └─ assets.js   # And all th pictures included   
+│  ├─ components/
+│  │  ├─ Navbar.jsx
+│  │  ├─ Header.jsx
+│  │  ├─ Projects.jsx
+│  │  ├─ About.jsx
+│  │  ├─ Contact.jsx
+│  │  └─ Footer.jsx
+│  │  └─ Testimonials.jsx
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css
+├─ .gitignore
+├─ README.md
+├─ package.json
+├─ package-lock.json
+├─ vite.config.js
+├─ vercel.json
+├─ index.html
+└─ eslint.config.js
+```
+
+Note: Don't forget to add .env and VITE_WEB3_KEY="Your Real Web3 forms Public key `Not API key` jus so the Message sents in the Website would be directly sents to you"
+
+---
+
 ## 📥 Installation & Setup
 
 Follow these steps to run the project locally:
@@ -65,6 +100,19 @@ Contact Form – Send a message directly to the owner (email integration works v
 
 Responsive UI – Try resizing the browser to see the responsive design in action.
 
+---
+
+## 🙏 Credits
+
+Inspired by GreatStack.
+
+---
+
+## 📄 License
+
+No license specified for this repository.
+---
+`Happy Coding`
 ---
 
 # React + Vite
