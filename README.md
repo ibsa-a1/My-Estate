@@ -65,7 +65,7 @@ My-Estate/
 └─ eslint.config.js
 ```
 
-Note: Don't forget to add .env and VITE_WEB3_KEY="Your Real Web3 forms Public key `Not API key` jus so the Message sents in the Website would be directly sents to you"
+Note: Don't forget to add `.env` and `VITE_WEB3_KEY="Your Real Web3 forms Public key"` Notice here it is `Not API key` jus so the Message sents in the Website would be directly sents to you"
 
 ---
 
